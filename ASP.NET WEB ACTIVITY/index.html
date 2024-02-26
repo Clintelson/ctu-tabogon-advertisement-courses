@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="CTU_new_logo.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'> 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Main</title>
+</head>
+ 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<body>
+    <header>
+        <div class="logo">
+            <span-2 class="navsidebtn" data-aos="fade-right" style="font-size:30px;cursor:pointer;" onclick="openNav()"><img src = "CTU_new_logo.png" alt="logo" style="height: 90px; width: 90x;" data-aos="fade-right"></span-2>
+        </div>
+
+        <div class="logo1">
+            <img src = "Seal_of_ASEAN.svg.png" alt="logo" style="height: 90px; width: 90x;" data-aos="fade-left">
+        </div>
+
+        <h1 data-aos="slide-down" data style="cursor:pointer;">CTU TABOGON-EXTENSION</h1>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="http://127.0.0.1:5500/index.html">HOME</a>
+            <a href="http://127.0.0.1:5500/cot.html">COT</a>
+            <a href="http://127.0.0.1:5500/coed.html">COED</a>
+            <a href="http://127.0.0.1:5500/coe.html">COE</a>
+            <a href="https://www.ctu.edu.ph/tabogon/about/">ABOUT US</a>
+        </div>
+
+    </header>
+
+    <div class="dprtname">
+       <h2 data-aos="fade-down" data-aos-delay="100" style="cursor:pointer;">DEPARTMENTS</h2> 
+    </div>
+
+    <div class="department">
+        <div class="img-shake" onclick="myFunction()"> 
+        <img src="COT.png" alt="college of tech" style="height: 300px;" data-aos="fade-right" data-aos-delay="300">
+        <span class="popuptext" id="myPopup">
+            <b>Program Offers:</b><br>
+            Bachelor of Science in Information Technology, and<br>
+            Bachelor of Science in Hotel Management. <br>
+            <i>for more Information just click the label below.</i>
+        </span>
+        </div>
+
+        <div class="img-shake" onclick="myFunction1()">
+        <img src="COED.png" alt="college of tech" style="height: 300px;" data-aos="fade-down" data-aos-delay="300">
+        <span class="popuptext" id="myPopup1">
+            <b>Program Offers:</b><br>
+            Bachelor of Elementary Education, and<br> 
+            Bachelor of Technology and Livelihood Education. <br>
+            <i>for more Information just click the label below.</i>
+        </span>
+        </div>
+
+        <div class="img-shake" onclick="myFunction2()">
+        <img src="COTE.png" alt="college of tech" style="height: 300px;" data-aos="fade-left" data-aos-delay="300">
+        <span class="popuptext" id="myPopup2">
+            <b>Program Offers:</b><br>
+            Bachelor of Science in Industrial Engineering.<br>
+            <i>for more Information just click the label below.</i>
+        </span>
+        </div>
+
+    </div>
+
+    <div class="dprtlabel">
+        <a href="http://127.0.0.1:5500/cot.html">
+        <h3 style="margin-left: 8px;" data-aos="fade-up" data-aos-delay="300"> COLLEGE OF TECHNOLOGY</h3>
+        </a>
+
+        <a href="http://127.0.0.1:5500/coed.html" data-aos="fade-up" data-aos-delay="500">
+        <h3 style="margin-left: -11px;" >COLLEGE OF EDUCATION</h3>
+        </a>
+
+        <a href="http://127.0.0.1:5500/coe.html" data-aos="fade-up" data-aos-delay="700">
+        <h3 style="margin-left: -67px;" >COLLEGE OF ENGINEERING</h3>
+        </a>
+    </div>
+
+    <footer>
+        <h6>@chunmaru</h6>
+    </footer>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+        
+        function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+        }
+
+        function myFunction1() {
+        var popup = document.getElementById("myPopup1");
+        popup.classList.toggle("show");
+        }
+
+        function myFunction2() {
+        var popup = document.getElementById("myPopup2");
+        popup.classList.toggle("show");
+        }
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+</body>
+</html>
