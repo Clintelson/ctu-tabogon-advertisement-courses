@@ -31,7 +31,7 @@
             <a href="http://127.0.0.1:5500/cot.html">COT</a>
             <a href="http://127.0.0.1:5500/coed.html">COED</a>
             <a href="http://127.0.0.1:5500/coe.html">COE</a>
-            <a href="https://www.ctu.edu.ph/tabogon/about/">ABOUT US</a>
+            <a href="http://127.0.0.1:5500/about.html">ABOUT US</a>
         </div>
 
     </header>
@@ -41,7 +41,7 @@
     </div>
 
     <div class="department">
-        <div class="img-shake" onclick="myFunction()"> 
+        <div class="img-shake" onmouseover="myFunction()" onmouseout="close()"> 
         <img src="COT.png" alt="college of tech" style="height: 300px;" data-aos="fade-right" data-aos-delay="300">
         <span class="popuptext" id="myPopup">
             <b>Program Offers:</b><br>
@@ -51,7 +51,7 @@
         </span>
         </div>
 
-        <div class="img-shake" onclick="myFunction1()">
+        <div class="img-shake" onmouseover="myFunction1()" onmouseout="close()">
         <img src="COED.png" alt="college of tech" style="height: 300px;" data-aos="fade-down" data-aos-delay="300">
         <span class="popuptext" id="myPopup1">
             <b>Program Offers:</b><br>
@@ -61,7 +61,7 @@
         </span>
         </div>
 
-        <div class="img-shake" onclick="myFunction2()">
+        <div class="img-shake" onmouseover="myFunction2()" onmouseout="close()">
         <img src="COTE.png" alt="college of tech" style="height: 300px;" data-aos="fade-left" data-aos-delay="300">
         <span class="popuptext" id="myPopup2">
             <b>Program Offers:</b><br>
@@ -108,6 +108,11 @@
         var popup = document.getElementById("myPopup2");
         popup.classList.toggle("show");
         }
+        
+        function close(){
+            document.querySelector(".img-shake").innerHTML="";
+        }
+
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
         }
